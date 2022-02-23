@@ -8,13 +8,15 @@ function App() {
   return (
     <>
     <div className="App">
-      <header className="App-header">
-        <NavBar />
-        <p>
-          Alayna
-        </p>
-      </header>
-      <Slider slides={SliderPhotos}/>
+      <div className="App-container">
+        <header className="App-header">
+          <NavBar />
+          <h2 className="alayna-title">
+            Alayna
+          </h2>
+        </header>
+        <Slider slides={SliderPhotos}/>
+      </div>
     </div>
     </>
   );

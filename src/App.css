@@ -1,4 +1,19 @@
 
+.App {
+  height: 100vh;
+  background: rgb(202, 202, 202);
+  background-image: url('./images/pets_white.svg');
+  background-size: 10rem;
+  background-repeat: repeat;
+  margin: 0;
+}
+
+.App-container {
+  height: 100vh;
+  background-image: linear-gradient(0deg, rgba(213,213,213,0.7) 0%, rgba(255, 255, 255, 0.9) 55%);
+
+}
+
 .App-header {
   min-height: 20vh;
   display: flex;
@@ -10,3 +25,11 @@
 }
 
 
+
+.alayna-title {
+  font-family: 'Sail', cursive;
+  color: black;
+  font-size: var(--font-l);
+  letter-spacing: .3rem;
+  text-shadow: 4px 4px 4px rgb(229, 206, 255);
+}
