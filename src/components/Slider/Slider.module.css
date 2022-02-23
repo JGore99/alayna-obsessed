@@ -4,7 +4,7 @@
   position: relative;
   height: auto;
   /* width: 80rem; */
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: black solid 1px;
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
@@ -41,16 +40,18 @@
 
 .slideImage {
   width: 80%;
+  border-radius: 10px;
 }
 
 .arrow {
-  color: rgb(148, 71, 219);
+  color: rgb(213, 81, 240);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   user-select: none;
-  font-size: 70px;
+  font-size: 7rem;
+  opacity: 0.9;
   position: absolute;
   top: 50%;
   z-index: 10;

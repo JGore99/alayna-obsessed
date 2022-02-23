@@ -14,13 +14,13 @@ const SliderPhotos = [
     id: 2,
     image: Alayna02,
     desc: "Silly Dog, being silly",
-    title: "Not properly equipped for this"
+    title: "Jack from the Shining vibes"
   },
   {
     id: 3,
     image: Alayna03,
     desc: "Silly Dog, being silly",
-    title: "YOLO!"
+    title: "Hates getting wet. Also YOLO!"
   },
 ]
 
