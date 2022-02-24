@@ -2,6 +2,10 @@
 .navBarContainer {
   /* height: 15rem; */
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   position: absolute;
@@ -15,14 +19,15 @@
   opacity: 0.8;
   min-height: 15px;
   position: relative;
+  width: 100%;
 }
 
 .navMessage {
-  color: var(--gray);
+  color: rgb(215, 148, 253);
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: -3px;
+  bottom: -2px;
   left: 0;
   font-size: var(--font-tiny);
   font-weight: 200;
@@ -32,18 +37,40 @@
 
 .navBarItems {
   background-color: rgba(241, 241, 241, 0.4);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--nav-font);
   font-size: var(--font-xs);
-  color: black;
+  font-weight: 300;
+  color: var(--dk-gray);
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px 0;
+  justify-content: space-evenly;
+  padding: 5px 0 0 0;
   margin: 0;
   width: 100%;
   height: auto;
+  position: relative;
+  left: 0;
 }
 
 ul {
   list-style-type: none;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem:hover {
+  transform: scale(1.2);
+}
+
+.navIcon {
+  font-size: var(--font-s);
+  padding-right: 0.4rem;
+}
+
+.navIcon:hover {
+  color: var(--pink);
+  
 }
