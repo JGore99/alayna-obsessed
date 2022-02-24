@@ -12,7 +12,10 @@
   justify-content: flex-start;
 }
 
-
+.pageTitle {
+  font-size: var(--font-m);
+  margin: 1rem 0;
+}
 
 .text-link {
   color: inherit;
