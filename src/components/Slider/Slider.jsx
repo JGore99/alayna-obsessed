@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Slider.module.css'
-import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft, FaHeart } from 'react-icons/fa'
 import SliderPhotos from '../SliderPhotos/SliderPhotos'
 import Modal from '../Modal/Modal'
 
@@ -37,15 +37,13 @@ const Slider = ({ slides }) => {
               <>
               <img className={`${styles.slideImage}`} src={ slide.image } alt="Silly Dog, being silly" />
               <h2>{slide.title}</h2>
-              <button 
-                className={`${styles.openModalBtn}`} 
+              <FaHeart 
+                className={`${styles.heart}`}
                 onClick={() => {
                   setOpenModal(true)
                   setShowArrows(false)
                 }}
-              >
-                Click to enlarge
-              </button>
+              />
               {openModal && <Modal image={slide.image} closeModal={setOpenModal} hideArrows={setShowArrows}/>}
               </>
               )}
