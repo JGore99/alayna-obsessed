@@ -5,9 +5,7 @@ function Modial({ image, closeModal, hideArrows}) {
   return (
     <div className={`${styles.modalBg}`}>
       <div className={`${styles.modalContainer}`}>
-        <div className={`${styles.modalBody}`}>
         <img className={`${styles.modalImage}`} src={ image } alt="Silly Dog, being silly" />
-        </div>
         <button 
           className={`${styles.closeModalBtn}`} 
           onClick={() => {

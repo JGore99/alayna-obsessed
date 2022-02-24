@@ -2,13 +2,17 @@
 
 .sliderContainer {
   position: relative;
+  /* width: 60vw; */
   height: auto;
-  /* width: 80rem; */
-  max-width: 700px;
+  /* height: 80rem;
+  max-height: 700px;
+  width: 80rem;
+  max-width: 700px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 2rem;
   z-index: 0;
 }
 
@@ -27,22 +31,27 @@
   height: 10rem; */
   scroll-behavior: smooth;
   scroll-snap-align: start;
+  top: 0;
 }
 
 .activeSlide {
+  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
   position: relative;
+  top: 0;
   z-index: 1;
 }
 
 .slideImage {
-  width: 80%;
+  max-height: 500px;
+  height: auto;
+  /* object-fit: fill; */
   border-radius: 10px;
 }
 
@@ -66,11 +75,11 @@
 }
 
 .leftArrow {
-  left: 32px; 
+  left: 5rem; 
 }
 
 .rightArrow {
-  right: 32px;
+  right: 5rem;
 }
 
 /* @supports (scroll-snap-type) {

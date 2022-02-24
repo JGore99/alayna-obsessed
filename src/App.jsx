@@ -13,11 +13,13 @@ function App() {
       <div className="App-container">
         <header className="App-header">
           <NavBar />
+        </header>
+        <main>
           <h2 className="alayna-title">
             Alayna
           </h2>
-        </header>
-        <Slider slides={SliderPhotos} modal={Modal}/>
+            <Slider slides={SliderPhotos} modal={Modal}/>
+        </main>
       </div>
     </div>
     </>
