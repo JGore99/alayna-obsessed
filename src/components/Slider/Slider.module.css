@@ -82,6 +82,13 @@
   right: 5rem;
 }
 
+.heart {
+  font-size: 6rem;
+  fill: var(--pink);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /* @supports (scroll-snap-type) {
   .slider > a {
     display: none;

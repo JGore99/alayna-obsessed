@@ -1,10 +1,10 @@
 
 .modalBg {
-  width: 100%;
-  height: 100%;
+  width: 60rem;
+  height: 65rem;
   background: rgb(202, 202, 202);
   background-image: url('../../images/pets_white.svg');
-  background-size: 20rem;
+  background-size: 5rem;
   background-repeat: repeat;
   position:absolute;
   display: flex;
@@ -18,9 +18,10 @@
   height: 100%;
   width: 100%;
   background-image: linear-gradient(0deg, rgba(213,213,213,0.7) 0%, rgba(255, 255, 255, 0.9) 55%);
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -36,7 +37,18 @@
 } */
 
 .modalImage {
-  height: 725px;
-  max-height: 100%;
+  border-radius: 5px;
+  width: 100%;
+  /* height: 725px;
+  max-height: 85%; */
   z-index: 100;
+}
+
+.closeModalBtn {
+  font-size: 6rem;
+  fill: var(--pink);
+  opacity: 0.7;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
 }
