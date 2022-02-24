@@ -1,8 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 html, body, main {
   /* height: 100%; */
   width: 100%;
   margin: 0;
+  padding: 0;
   min-width: 320px;
   /* max-width: 100% */
 }
@@ -21,14 +26,22 @@ html, body, main {
      in most browser configurations this will be 10px */
 :root {
   font-size: 62.5%;
+  --pink: rgb(182, 81, 240);
+  --gray: rgb(218, 218, 218);
+  --font-tiny: 1.2rem;
+  --font-xs: 1.4rem;
+  --font-l: 5rem;
 }
+
 
 body {
   /* font-family: 'ABeeZee', sans-serif; */
   font-family: 'Inter', sans-serif;
-  color: rgba(234, 224, 213);
-  background-color: #bebebe;
-}
+  color: black;
+};
+
+  
+
 
 a:link {
   text-decoration: none;

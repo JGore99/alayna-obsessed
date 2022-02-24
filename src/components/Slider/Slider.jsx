@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './Slider.module.css'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import SliderPhotos from '../SliderPhotos/SliderPhotos'
+import Modal from '../Modal/Modal'
 
 
 const Slider = ({ slides }) => {
@@ -16,14 +17,16 @@ const Slider = ({ slides }) => {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
 
+  const [showArrows, setShowArrows] = useState(true)
+
+  const [openModal, setOpenModal] = useState(false)
+
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null
   }
   
   return (
     <div className={`${styles.sliderContainer}`}>
-    <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide} />
-    <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide} />
       {SliderPhotos.map((slide, index) => {
         return (
           <div
@@ -31,14 +34,26 @@ const Slider = ({ slides }) => {
             key={slide.id}  
           >
             {index === current && (
+              <>
               <img className={`${styles.slideImage}`} src={ slide.image } alt="Silly Dog, being silly" />
-              )}
-            {index === current && (
               <h2>{slide.title}</h2>
+              <button 
+                className={`${styles.openModalBtn}`} 
+                onClick={() => {
+                  setOpenModal(true)
+                  setShowArrows(false)
+                }}
+              >
+                Click to enlarge
+              </button>
+              {openModal && <Modal image={slide.image} closeModal={setOpenModal} hideArrows={setShowArrows}/>}
+              </>
               )}
           </div>
         );
       })}
+    {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide} />}
+    {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide} />}
     </div>
   )
 }

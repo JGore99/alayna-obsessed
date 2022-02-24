@@ -14,7 +14,7 @@ const SliderPhotos = [
     id: 2,
     image: Alayna02,
     desc: "Silly Dog, being silly",
-    title: "Jack from the Shining vibes"
+    title: 'Jack from "The Shining" vibes'
   },
   {
     id: 3,

@@ -1,20 +1,47 @@
 
 .navBarContainer {
-  background-color: rgb(163, 20, 219);
-  height: 5rem;
+  /* height: 15rem; */
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
+  position: absolute;
+  top: 0;
+  
+}
+
+.navMessageContainer{
+  background-color: var(--pink);
+  border-bottom: 1px solid rgb(109, 0, 103);
+  opacity: 0.8;
+  min-height: 15px;
+  position: relative;
+}
+
+.navMessage {
+  color: var(--gray);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  font-size: var(--font-tiny);
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
 }
 
 .navBarItems {
+  background-color: rgba(241, 241, 241, 0.4);
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-xs);
+  color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0;
+  padding: 5px 0;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 ul {
