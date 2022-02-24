@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html, body, main {
   /* height: 100%; */
   width: 100%;
@@ -28,22 +30,38 @@ html, body, main {
   font-size: 62.5%;
   --pink: rgb(182, 81, 240);
   --gray: rgb(218, 218, 218);
+  --dk-gray: rgb(63, 63, 63);
   --font-tiny: 1.2rem;
-  --font-xs: 1.4rem;
+  --font-xs: 1.5rem;
+  --font-s: 1.7rem;
+  --font-m: 2.1rem;
   --font-l: 5rem;
+  --nav-font: 'Lato', sans-serif;
+  --nav-font-b: 'Inter', sans-serif;
 }
 
 
 body {
-  /* font-family: 'ABeeZee', sans-serif; */
-  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  font-family: var(--nav-font);
   color: black;
+  background: rgb(202, 202, 202);
+  background-image: url('./images/pets_white.svg');
+  background-size: 10rem;
+  background-repeat: repeat;
+  margin: 0;
 };
-
-  
-
 
 a:link {
   text-decoration: none;
-  
+  color: inherit;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+

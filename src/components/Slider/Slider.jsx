@@ -36,14 +36,15 @@ const Slider = ({ slides }) => {
             {index === current && (
               <>
               <img className={`${styles.slideImage}`} src={ slide.image } alt="Silly Dog, being silly" />
-              <h2>{slide.title}</h2>
+              <h3 className={`${styles.slideTitle}`}>{slide.title}</h3>
               <FaHeart 
                 className={`${styles.heart}`}
                 onClick={() => {
                   setOpenModal(true)
                   setShowArrows(false)
                 }}
-              />
+                />
+                {/* <h5>enlarge</h5> */}
               {openModal && <Modal image={slide.image} closeModal={setOpenModal} hideArrows={setShowArrows}/>}
               </>
               )}

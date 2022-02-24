@@ -1,0 +1,13 @@
+
+.buddiesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buddiesCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
