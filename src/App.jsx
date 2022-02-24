@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import Slider from './components/Slider/Slider';
 import SliderPhotos from './components/SliderPhotos/SliderPhotos';
+import Modal from './components/Modal/Modal';
 
 function App() {
+
   return (
     <>
     <div className="App">
@@ -15,7 +17,7 @@ function App() {
             Alayna
           </h2>
         </header>
-        <Slider slides={SliderPhotos}/>
+        <Slider slides={SliderPhotos} modal={Modal}/>
       </div>
     </div>
     </>
