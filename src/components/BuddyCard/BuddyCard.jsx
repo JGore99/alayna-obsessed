@@ -1,9 +1,14 @@
 import React from 'react'
 import styles from './BuddyCard.module.css'
 
-const BuddyCard = ({ buddy }) => {
+const BuddyCard = ({ buddy, openBuddyModal, setBuddyId }) => {
   return (
-    <div className={`${styles.buddyCard}`}>
+    <div className={`${styles.buddyCard}`} 
+      onClick={() => {
+      openBuddyModal(true)
+      setBuddyId(buddy.id)
+      console.log(buddy.id)
+    }}>
       <img className={`${styles.buddyImage}`} src={ buddy.image } alt="Buddies!!" />
       <h3 className={`${styles.buddyName}`}>{buddy.name}</h3>
       <h4 className={`${styles.buddyTitle}`}>{buddy.title}</h4>

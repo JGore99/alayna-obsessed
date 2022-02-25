@@ -28,7 +28,7 @@ const BuddyPhotos = [
     id: 3,
     image: Buddy03,
     name: "Chickadee!",
-    title: "Definitely not Falkor"
+    title: "Definitely not Falkor?"
   },
   {
     id: 4,
@@ -51,14 +51,14 @@ const BuddyPhotos = [
   {
     id: 7,
     image: Buddy07,
-    name: "Hank!",
+    name: "Hank again!",
     title: "140lbs of mush"
   },
   {
     id: 8,
     image: Buddy08,
     name: "Alto",
-    title: "or is this Rippley?"
+    title: "or is this Ripley?"
   },
   {
     id: 9,

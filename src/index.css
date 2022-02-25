@@ -35,14 +35,14 @@ html, body, main {
   --font-xs: 1.5rem;
   --font-s: 1.7rem;
   --font-m: 2.1rem;
-  --font-l: 5rem;
+  --font-l: 4.8rem;
   --nav-font: 'Lato', sans-serif;
   --nav-font-b: 'Inter', sans-serif;
 }
 
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   bottom: 0;
