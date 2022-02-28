@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  
 }
 
 .buddiesCardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 2rem;
 }

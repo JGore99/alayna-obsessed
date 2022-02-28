@@ -37,22 +37,29 @@ const Slider = ({ slides }) => {
               <>
               <img className={`${styles.slideImage}`} src={ slide.image } alt="Silly Dog, being silly" />
               <h3 className={`${styles.slideTitle}`}>{slide.title}</h3>
-              <FaHeart 
-                className={`${styles.heart}`}
+              <div className={`${styles.slideControls}`}>
+                <dvi className={`${styles.heartContainer}`}
                 onClick={() => {
                   setOpenModal(true)
                   setShowArrows(false)
                 }}
-                />
-                {/* <h5>enlarge</h5> */}
+                >
+                  <FaHeart 
+                    className={`${styles.heart}`}
+                  />
+                  <h5 className={`${styles.enlarge}`}>ZOOM <br/>IN</h5>
+                </dvi>  
+                {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide} />}
+                {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide} />} 
+              </div>
               {openModal && <Modal image={slide.image} closeModal={setOpenModal} hideArrows={setShowArrows}/>}
               </>
               )}
           </div>
         );
       })}
-    {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide} />}
-    {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide} />}
+    {/* {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide} />}
+    {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide} />} */}
     </div>
   )
 }

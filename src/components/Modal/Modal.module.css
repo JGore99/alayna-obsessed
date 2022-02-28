@@ -26,6 +26,7 @@
 }
 
 .modalImage {
+  border: 2px var(--pink) solid;
   border-radius: 5px;
   width: auto;
   height: 700px;

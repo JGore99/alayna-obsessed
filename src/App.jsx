@@ -23,7 +23,6 @@ function App() {
       <Route path='/aliases' element={<Aliases />}/>
       <Route path='/buddies' element={<Buddies />}/>
       <Route path='/favorites' element={<Favorites />}/>
-
     </Routes>
     </div>
   );

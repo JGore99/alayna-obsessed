@@ -17,17 +17,17 @@
   background-color: var(--pink);
   border-bottom: 1px solid rgb(109, 0, 103);
   opacity: 0.8;
-  min-height: 15px;
+  min-height: 20px;
   position: relative;
   width: 100%;
 }
 
 .navMessage {
-  color: rgb(215, 148, 253);
+  color: rgb(202, 141, 238);
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   left: 0;
   font-size: var(--font-tiny);
   font-weight: 200;
@@ -59,10 +59,14 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .navItem:hover {
   transform: scale(1.2);
+  background-color: rgb(231, 231, 231);
+  border-radius: 0 5px;
+
 }
 
 .navIcon {

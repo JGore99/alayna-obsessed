@@ -10,9 +10,9 @@ function BuddyModal({ image, name, title, closeBuddyModal}) {
       <img className={`${styles.bdModalImage}`} src={ image } alt="Silly Dog, being silly" />
       <h3 className={`${styles.bdModalName}`}>{ name }</h3>
       <h4 className={`${styles.bdModalTitle}`}>{ title} </h4>
-        {/* <GiDogHouse 
+        <GiDogHouse 
           className={`${styles.closeModalBtn}`} 
-        /> */}
+        />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 
 .buddyCard {
-  margin: 0.3rem .5rem;
+  margin: 2rem .5rem;
   width: 20%;
   height: 20%;
   height: auto;
@@ -24,4 +24,6 @@
 .buddyTitle {
   padding: 0;
   margin: 0;
+  text-align: center;
+  word-wrap: normal;
 }
