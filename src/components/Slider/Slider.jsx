@@ -45,12 +45,12 @@ const Slider = ({ slides }) => {
                 }}
                 >
                   <FaHeart 
-                    className={`${styles.heart}`}
+                    className={`${styles.heart} ${styles.slideControlBtn}`}
                   />
                   <h5 className={`${styles.enlarge}`}>ZOOM <br/>IN</h5>
                 </dvi>  
-                {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide} />}
-                {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide} />} 
+                {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow} ${styles.slideControlBtn}`} onClick={prevSlide} />}
+                {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow} ${styles.slideControlBtn}`} onClick={nextSlide} />} 
               </div>
               {openModal && <Modal image={slide.image} closeModal={setOpenModal} hideArrows={setShowArrows}/>}
               </>

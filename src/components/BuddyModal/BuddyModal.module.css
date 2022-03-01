@@ -11,7 +11,7 @@
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 10; 
 }
@@ -20,7 +20,7 @@
   height: 100%;
   width: 100%;
   /* background-image: linear-gradient(0deg, rgba(213,213,213,0.7) 0%, rgba(255, 255, 255, 0.9) 55%); */
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,23 +35,31 @@
   z-index: 100;
 }
 
-/* .bdModalName {
-  font-size: var(--font-s);
-  position: relative;
+.bdModalDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  /* position: relative; */
+}
+
+.bdModalName {
+  font-size: var(--font-m);
   z-index: 1000;
+  /* position: relative; */
 }
 
 .bdModalTitle {
   font-size: var(--font-s);
-  position: relative;
   z-index: 1000;
-} */
+  /* position: relative; */
+}
 
 .closeModalBtn {
   font-size: 6rem;
   fill: var(--pink);
   opacity: 0.7;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
   z-index: 1000;
 }

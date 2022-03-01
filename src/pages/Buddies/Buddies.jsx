@@ -23,7 +23,7 @@ const Buddies = () => {
             setBuddyId={setBuddyId}
             />
             {console.log(buddyId)}
-          {openBuddyModal && buddyId === buddy.id && <BuddyModal image={buddy.image} closeBuddyModal={setOpenBuddyModal} />}
+          {openBuddyModal && buddyId === buddy.id && <BuddyModal image={buddy.image} name={buddy.name} title={buddy.title} closeBuddyModal={setOpenBuddyModal} />}
           </>
         )
       })}

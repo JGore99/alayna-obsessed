@@ -1,7 +1,7 @@
 
 
 .sliderContainer {
-  position: relative;
+  position: absolute;
   /* width: 60vw; */
   height: auto;
   /* height: 80rem;
@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  top: 200px;
   z-index: 0;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .slideTitle {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .slideControls{
@@ -73,11 +74,11 @@
 }
 
 .leftArrow {
-  left: 7rem; 
+  margin-right: 14rem; 
 }
 
 .rightArrow {
-  right: 7rem;
+  margin-left: 14rem;
 }
 
 .heartContainer{
@@ -101,6 +102,10 @@
   font-size: 1rem;
   text-align: center;
   left: 0%;
+}
+
+.slideControlBtn:hover {
+  transform: scale(1.1);
 }
 
 /* @supports (scroll-snap-type) {

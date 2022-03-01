@@ -5,9 +5,7 @@ import SliderPhotos from '../../components/SliderPhotos/SliderPhotos'
 
 const Landing = () => {
   return (
-    <div className={`${styles.landingContainer}`}>
       <Slider slides={SliderPhotos}/>
-    </div>
   )
 }
 

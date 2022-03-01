@@ -15,6 +15,7 @@
 .pageTitle {
   font-size: var(--font-m);
   margin: 0;
+  padding: 0;
 }
 
 .text-link {

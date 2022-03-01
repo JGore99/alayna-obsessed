@@ -1,7 +1,7 @@
 
 .modalBg {
-  width: 60rem;
-  height: 65rem;
+  max-width: 80%;
+  height: 70rem;
   /* background: rgb(202, 202, 202);
   background-image: url('../../images/pets_white.svg');
   background-size: 5rem;
@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 
 .modalImage {

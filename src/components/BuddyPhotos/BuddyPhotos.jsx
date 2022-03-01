@@ -9,6 +9,9 @@ import Buddy08 from'../../images/Buddies-08.jpg'
 import Buddy09 from'../../images/Buddies-09.jpg'
 import Buddy10 from'../../images/Buddies-10.jpg'
 import Buddy11 from'../../images/Buddies-11.jpg'
+import Buddy12 from'../../images/Buddies-12.jpg'
+import Buddy13 from'../../images/Buddies-13.jpg'
+import Buddy14 from'../../images/Buddies-14.jpg'
 
 
 const BuddyPhotos = [
@@ -77,6 +80,24 @@ const BuddyPhotos = [
     image: Buddy11,
     name: "no clue",
     title: "but look at him, he's amazing!"
+  },
+  {
+    id: 12,
+    image: Buddy12,
+    name: "Flash Gordon",
+    title: "professional dog"
+  },
+  {
+    id: 13,
+    image: Buddy13,
+    name: "Fin",
+    title: "lemme just climb in your mouth"
+  },
+  {
+    id: 14,
+    image: Buddy14,
+    name: "Karma",
+    title: "Pittie Party!"
   },
 ]
 
