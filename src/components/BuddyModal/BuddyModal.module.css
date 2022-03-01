@@ -1,27 +1,27 @@
 
 .bdModalBg {
   width: 100%;
-  height: 125%;
-  margin-top: 3rem;
+  height: 92%;
+  margin-top: 2.1rem;
   padding-top: 5rem;
-  background: rgba(238, 238, 238, 0.9);
-  background-image: url('../../images/pets_white.svg');
+  background: rgba(243, 243, 243, 0.9);
+  background-image: url('../../images/bone-white.svg');
   background-size: 5rem;
   background-repeat: repeat;
   position:absolute;
   top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   z-index: 10; 
+  cursor: pointer;
 }
 
-.modalContainer {
+.bdModalCard {
   height: 100%;
-  width: 100%;
-  /* background-image: linear-gradient(0deg, rgba(213,213,213,0.7) 0%, rgba(255, 255, 255, 0.9) 55%); */
-  /* position: relative; */
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,7 +31,7 @@
 .bdModalImage {
   border: 2px var(--pink) solid;
   border-radius: 5px;
-  max-width: 90%;
+  max-width: 100%;
   max-height: 80%;
   z-index: 100;
 }
@@ -40,27 +40,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 100%;
+  margin-top: .5rem;
   /* position: relative; */
 }
 
 .bdModalName {
   font-size: var(--font-m);
   z-index: 1000;
+  flex: 1;
   /* position: relative; */
 }
 
 .bdModalTitle {
   font-size: var(--font-s);
   z-index: 1000;
+  flex: 1;
+  text-align: right;
   /* position: relative; */
+}
+
+.closeModalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .closeModalBtn {
   font-size: 6rem;
   fill: var(--pink);
   opacity: 0.7;
-  cursor: pointer;
   /* position: relative; */
   z-index: 1000;
 }
