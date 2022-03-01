@@ -6,12 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html, body, main {
-  /* height: 100%; */
   width: 100%;
   margin: 0;
   padding: 0;
   min-width: 320px;
-  /* max-width: 100% */
 }
 
 /* The Universal Selector */
@@ -43,7 +41,7 @@ html, body, main {
 
 body {
   min-height: 100vh;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   bottom: 0;
   font-family: var(--nav-font);
