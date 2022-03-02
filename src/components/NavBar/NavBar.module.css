@@ -15,7 +15,7 @@
 
 .navMessageContainer{
   background-color: var(--pink);
-  border-bottom: 1px solid rgb(109, 0, 103);
+  border-bottom: 1px solid var(--dk-pink);
   opacity: 0.8;
   min-height: 20px;
   position: relative;

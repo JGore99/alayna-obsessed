@@ -22,6 +22,7 @@
   border-radius: 50%;
   position: relative;
   background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
+  cursor: pointer;
 }
 
 .eightBallOutter:before {
@@ -46,7 +47,7 @@
   top: 4%;
   left: 6%;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(236, 236, 236, 0.8), rgba(238, 238, 238, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+  background: radial-gradient(circle at 50% 50%, rgba(236, 236, 236, 0.8), rgba(238, 238, 238, 0.6) 14%, rgba(255, 255, 255, 0) 24%);
   transform: translateX(-80px) translateY(-90px) skewX(-20deg);
   filter: blur(10px);
 }
@@ -54,11 +55,14 @@
 .eightBallRing {
   width: 140px;
   height: 140px;
-  margin: 30%;
+  
+  /* margin: 30%; */
   background: rgb(0, 0, 0);
   border: 1px rgb(110, 110, 110) solid;
   border-radius: 50%;
-  position: absolute;
+  position: relative;
+  top: 30%;
+  left: 25%;
   z-index: 20;
 }
 
@@ -69,8 +73,8 @@
   border: 1px rgb(110, 110, 110) solid;
   border-radius: 50%;
   position: relative;
-  top: 6.5%;
-  left: 6.5%;
+  top: 6.6%;
+  left: 6.6%;
   z-index: 20;
 }
 
@@ -96,25 +100,48 @@
   align-items: center;
   cursor: pointer;
   position: relative;
-  top: 16%;
+  top: 14%;
   left: 9%;
+  /* opacity: 0; */
+  /* transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -webkit-transition: all 5s ease-in-out; */
 }
 
 .heart {
   font-size: 9rem;
   fill: var(--pink);
-  opacity: 0.8; 
   position: absolute;
-  
 }
 
 .alias {
   width: 80%;
-  color: aliceblue;
-  font-size: 1.1rem;
+  color: var(--gray);
+  font-size: 1.2rem;
   text-align: center;
   word-wrap: normal;
   position: relative;
   bottom: 10%;
   z-index: 30;
 }
+
+.aliasInstruct {
+  width: 80%;
+  color: var(--gray);
+  font-size: 1.2rem;
+  text-align: center;
+  word-wrap: normal;
+  position: relative;
+  bottom: 10%;
+  z-index: 30;
+}
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
