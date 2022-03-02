@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react'
 import styles from './BuddyModal.module.css'
 import { GiDogHouse } from 'react-icons/gi'
 
-function BuddyModal({ image, name, title, closeBuddyModal, showBuddies}) {
+function BuddyModal({ image, name, title, closeBuddyModal, showBuddies }) {
+
   return(
     <div className={`${styles.bdModalBg}`} onClick={(id) => {
       closeBuddyModal(false)

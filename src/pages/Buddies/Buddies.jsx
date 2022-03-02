@@ -25,7 +25,7 @@ const Buddies = () => {
             setBuddyId={setBuddyId}
             setShowBuddies={setShowBuddies}
             />}
-          {openBuddyModal && buddyId === buddy.id && <BuddyModal image={buddy.image} name={buddy.name} title={buddy.title} closeBuddyModal={setOpenBuddyModal} showBuddies={setShowBuddies}/>}
+          {openBuddyModal && buddyId === buddy.id && <BuddyModal image={buddy.image} name={buddy.name} title={buddy.title} closeBuddyModal={setOpenBuddyModal} showBuddies={setShowBuddies} />}
           </>
         )
       })}

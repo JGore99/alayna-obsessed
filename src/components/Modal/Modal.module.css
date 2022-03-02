@@ -42,4 +42,9 @@
   cursor: pointer;
   position: relative;
   z-index: 1000;
+  padding-top: .5rem;
+}
+
+.closeModalBtn:hover {
+  transform: scale(1.1);
 }
