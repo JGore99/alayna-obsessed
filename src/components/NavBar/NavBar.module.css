@@ -60,6 +60,7 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  text-align: center;
 }
 
 .navItem:hover {
@@ -78,4 +79,12 @@ ul {
 .navIcon:hover {
   color: var(--pink);
   
+}
+
+@media only screen and (max-width: 530px) {
+
+  .navIcon {
+    font-size: var(--font-m);
+    padding-right: 0;
+  }
 }
