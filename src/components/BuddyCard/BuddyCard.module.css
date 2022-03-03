@@ -18,6 +18,7 @@
 
 .buddyCard:hover {
   transform: scale(1.1);
+  box-shadow: 5px 5px 2px 1px rgba(78, 78, 78, 0.2);
 }
 
 .buddyImage {

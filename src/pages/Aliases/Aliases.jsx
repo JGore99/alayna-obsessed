@@ -40,7 +40,7 @@ const Aliases = () => {
           onClick={() =>{
             transition()
           }}
-        >Click to see a nickname</button>
+        >Click</button>
     </div>
   )
 }

@@ -102,6 +102,8 @@
   position: relative;
   top: 14%;
   left: 9%;
+  opacity: 1;
+  transition: opacity 0.9s ease;
   /* opacity: 0; */
   /* transition: all 5s ease-in-out;
   -moz-transition: all 5s ease-in-out;
