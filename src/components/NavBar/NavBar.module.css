@@ -1,4 +1,3 @@
-
 .navBarContainer {
   /* height: 15rem; */
   width: 100%;
@@ -10,10 +9,9 @@
   padding: 0;
   position: absolute;
   top: 0;
-  
 }
 
-.navMessageContainer{
+.navMessageContainer {
   background-color: var(--pink);
   border-bottom: 1px solid var(--dk-pink);
   opacity: 0.8;
@@ -35,10 +33,77 @@
   text-align: center;
 }
 
+.hamburgerContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburgerContainer .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: var(--lt-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.hamburgerContainer .hamburger > div::before,
+.hamburgerContainer .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.hamburgerContainer .hamburger > div::after {
+  top: 10px;
+}
+
+.hamburgerContainer .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.hamburgerContainer .toggler:checked + .hamburger > div:before,
+.hamburgerContainer .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
 .navBarItems {
   background-color: rgba(241, 241, 241, 0.4);
-  font-family: var(--nav-font);
-  font-size: var(--font-xs);
   font-weight: 300;
   color: var(--dk-gray);
   display: flex;
@@ -68,7 +133,6 @@ ul {
   background-color: rgb(231, 231, 231);
   border-radius: 0 0 5px 5px;
   border: rgb(211, 211, 211) 1px solid;
-
 }
 
 .navIcon {
@@ -76,15 +140,84 @@ ul {
   padding-right: 0.4rem;
 }
 
+.navText {
+  font-family: var(--nav-font);
+  font-size: var(--font-xs);
+}
+
 .navIcon:hover {
   color: var(--pink);
-  
 }
 
-@media only screen and (max-width: 530px) {
+/* ----------------------------MEDIA---------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .hamburgerContainer {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navMessageContainer {
+    height: 50px;
+  }
+
+  .navBarItems {
+    visibility: hidden;
+  }
+
+  .navBarItemsChecked {
+    background-color: rgb(200, 121, 245);
+    border-left: 1px solid var(--dk-pink);
+    height: auto;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navItem {
+    visibility: hidden;
+  }
+
+  .navItemChecked{
+    border-bottom: 1px solid var(--dk-pink);
+    border-right: 1px solid var(--dk-pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    visibility: visible;
+  }
 
   .navIcon {
-    font-size: var(--font-m);
+    font-size: var(--font-l);
     padding-right: 0;
   }
+
+  .navIcon:hover {
+    color: inherit;
+  }
+
+  .navText {
+    font-size: var(--font-xs);
+  }
+
+
 }
+
+/* FIND OUT WHY DOESN"T THIS WORK? */
+/* @media (hover:none){
+  .navIcon:hover {
+    color: inherit;
+  }
+} */
