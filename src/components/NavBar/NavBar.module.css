@@ -145,6 +145,16 @@ ul {
   font-size: var(--font-xs);
 }
 
+.alaynaContainer {
+  visibility: hidden;
+  width: 0px;
+}
+
+.alaynaTitle {
+  visibility: hidden;
+  width: 0px;
+}
+
 .navIcon:hover {
   color: var(--pink);
 }
@@ -164,44 +174,58 @@ ul {
     height: 50px;
   }
 
+  .navMessage {
+    bottom: 2px;
+  }
+
   .navBarItems {
     visibility: hidden;
   }
 
   .navBarItemsChecked {
-    background-color: rgb(200, 121, 245);
+    background-color: rgba(241, 241, 241, 0.7);
     border-left: 1px solid var(--dk-pink);
+    /* height: 95vh; */
     height: auto;
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 0;
+    padding-bottom: 70vh;
     margin: 0;
     width: 100%;
     z-index: 100;
+    opacity: .97;
   }
 
   .navItem {
     visibility: hidden;
   }
 
+  li {
+    height: 100%;
+  }
+
   .navItemChecked{
+    background-color: rgb(200, 121, 245);
     border-bottom: 1px solid var(--dk-pink);
     border-right: 1px solid var(--dk-pink);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    /* height: 40px; */
+    padding: 3rem 1rem;
     margin: 0;
     text-align: center;
     visibility: visible;
   }
 
   .navIcon {
-    font-size: var(--font-l);
+    font-size: 4rem;
     padding-right: 0;
+    padding-bottom: 1rem;
   }
 
   .navIcon:hover {
@@ -209,10 +233,21 @@ ul {
   }
 
   .navText {
-    font-size: var(--font-xs);
+    font-size: var(--font-tiny);
   }
+}
 
-
+.alaynaTitleChecked {
+  font-family: 'Sail', cursive;
+  color: black;
+  font-size: var(--font-xl);
+  letter-spacing: .3rem;
+  text-shadow: 4px 4px 4px rgb(229, 206, 255);
+  margin: 0;
+  transform: rotate(-20deg);
+  -webkit-column-span: all;
+  column-span: all;
+  position: absolute;
 }
 
 /* FIND OUT WHY DOESN"T THIS WORK? */

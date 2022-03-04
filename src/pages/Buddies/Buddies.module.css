@@ -17,7 +17,13 @@
   height: 100%;
 }
 
-.ConfettiExplosion-container-317 {
-  min-height: 200%;
-}
+@media only screen and (max-width: 600px) {
 
+  .buddiesCardContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem; 
+    padding: 0 .5rem;
+    height: 100%;
+  }
+}

@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html, body, main {
-  width: 100%;
   margin: 0;
   padding: 0;
   min-width: 320px;
@@ -43,23 +42,23 @@ html, body, main {
   --font-s: 1.7rem;
   --font-m: 2.1rem;
   --font-l: 4.8rem;
+  --font-xl: 6rem;
   --nav-font: 'Lato', sans-serif;
   --nav-font-b: 'Inter', sans-serif;
 }
 
 
 body {
-  min-height: 100vh;
-  /* position: fixed; */
+  /* height: 100vh;
+  width: 100%;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
   font-family: var(--nav-font);
   color: black;
   background: rgb(202, 202, 202);
   background-image: url('./images/pets_white.svg');
   background-size: 10rem;
   background-repeat: repeat;
-  margin: 0;
 };
 
 a:link {

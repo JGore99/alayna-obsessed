@@ -1,5 +1,9 @@
 
 
+/* .headerContainer {
+  position: relative
+} */
+
 .alaynaTitle {
   font-family: 'Sail', cursive;
   color: black;
@@ -8,4 +12,12 @@
   text-shadow: 4px 4px 4px rgb(229, 206, 255);
   margin: 0;
   padding: 10rem 0 3rem 0;
+}
+
+/* ----------------------------MEDIA---------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .alaynaTitle {
+    padding: 7rem 0 1rem 0;
+  }
 }

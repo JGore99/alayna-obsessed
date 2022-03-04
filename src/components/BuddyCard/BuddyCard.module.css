@@ -42,3 +42,22 @@
   text-align: center;
   word-wrap: normal;
 }
+@media only screen and (max-width: 600px) {
+
+  .buddyCard {
+    background-image: linear-gradient(0deg, rgba(218, 218, 218, 0.3) 0%, rgba(255, 255, 255, 0.3) 50%);
+    border: 1px var(--pink) solid;
+    border-radius: 5px;
+    margin: 0 .2rem .6rem .2rem;
+    width: 10%;
+    min-width: 160px;
+    height: 20%;
+    min-height: 160px;
+    padding: 0.5rem;
+  }
+
+  .buddyCard:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

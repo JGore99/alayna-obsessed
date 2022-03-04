@@ -5,7 +5,9 @@ import SliderPhotos from '../../components/SliderPhotos/SliderPhotos'
 
 const Landing = () => {
   return (
+    <>
       <Slider slides={SliderPhotos}/>
+    </>
   )
 }
 
