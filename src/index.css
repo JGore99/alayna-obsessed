@@ -12,6 +12,12 @@ html, body, main {
   min-width: 320px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* The Universal Selector */
 *, /* All elements*/
 *::before, /* All ::before pseudo-elements */
@@ -33,7 +39,7 @@ html, body, main {
   --gray: rgb(218, 218, 218);
   --dk-gray: rgb(63, 63, 63);
   --font-tiny: 1.2rem;
-  --font-xs: 1.5rem;
+  --font-xs: 1.4rem;
   --font-s: 1.7rem;
   --font-m: 2.1rem;
   --font-l: 4.8rem;

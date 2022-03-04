@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import { GiDogHouse } from 'react-icons/gi'
@@ -6,29 +6,74 @@ import { FaBookOpen, FaVideo, FaHippo, FaDog,FaStar } from 'react-icons/fa'
 
 
 const NavBar = () => {
+
+  const [checked, setChecked] = useState(false)
+
+  const handleCheckBox = (e) => {
+    e.target.checked ? setChecked(true) : setChecked(false)
+  }
+
+  const closeHamburger = () => {
+    setChecked(false)
+  }
+
   return (
     <div className={styles.navBarContainer}>
       <div className={styles.navMessageContainer}>
         <h5 className={styles.navMessage}>We might be a little bit obsessed with our dog</h5>
       </div>
-      <ul className={styles.navBarItems}>
-        <li className={styles.navItem}>
-          <Link to='/'><GiDogHouse className={styles.navIcon}/>Home</Link>
+      <div className={styles.hamburgerContainer}>
+        <input type='checkbox' 
+        checked={checked}
+          className={styles.toggler}
+          onChange={(e) => {
+            handleCheckBox(e)
+          }}
+        />
+        <div className={styles.hamburger}>
+          <div></div>
+        </div>
+      </div>
+      <ul className={
+        checked ? styles.navBarItemsChecked : styles.navBarItems }
+        onClick={() => {
+          closeHamburger()
+        }}>
+        <li>
+          <Link to='/' className={checked ? styles.navItemChecked : styles.navItem }>
+            <GiDogHouse className={styles.navIcon}/>
+            <h3 className={styles.navText} >Home</h3>
+            </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to='/story'><FaBookOpen className={styles.navIcon}/> Story</Link>
+        <li>
+          <Link to='/story' className={checked ? styles.navItemChecked : styles.navItem }>
+            <FaBookOpen className={styles.navIcon}/>
+            <h3 className={styles.navText} >Story</h3>
+          </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to='/video'><FaVideo className={styles.navIcon}/>Video</Link>
+        <li>
+          <Link to='/video' className={checked ? styles.navItemChecked : styles.navItem }>
+            <FaVideo className={styles.navIcon}/>
+            <h3 className={styles.navText} >Video</h3>
+          </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to='/aliases'><FaHippo className={styles.navIcon}/>Aliases</Link>
+        <li>
+          <Link to='/aliases' className={checked ? styles.navItemChecked : styles.navItem }>
+            <FaHippo className={styles.navIcon}/>
+            <h3 className={styles.navText} >Aliases</h3>
+          </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to='/buddies'><FaDog className={styles.navIcon}/>Buddies!!</Link>
+        <li>
+          <Link to='/buddies' className={checked ? styles.navItemChecked : styles.navItem }>
+            <FaDog className={styles.navIcon}/>
+            <h3 className={styles.navText} >Buddies!!</h3>
+          </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link to='/favorites'><FaStar className={styles.navIcon}/>Favorites</Link>
+        <li>
+          <Link to='/favorites' className={checked ? styles.navItemChecked : styles.navItem }>
+            <FaStar className={styles.navIcon}/>
+            <h3 className={styles.navText} >Favorites</h3>
+          </Link>
         </li>
       </ul>
     </div>
