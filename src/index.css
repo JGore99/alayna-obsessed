@@ -7,7 +7,7 @@
 
 html, body, main {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   min-width: 320px;
 }
 
@@ -47,6 +47,18 @@ html, body, main {
   --nav-font-b: 'Inter', sans-serif;
 }
 
+main {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  /* position: absolute; */
+  background-image: linear-gradient(0deg, rgba(213,213,213,0.7) 0%, rgba(255, 255, 255, 0.9) 55%);
+  /* background-size: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 body {
   /* height: 100vh;

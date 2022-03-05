@@ -146,12 +146,7 @@ ul {
 }
 
 .alaynaContainer {
-  visibility: hidden;
-  width: 0px;
-}
-
-.alaynaTitle {
-  visibility: hidden;
+  display: none;
   width: 0px;
 }
 
@@ -170,6 +165,17 @@ ul {
     display: flex;
   }
 
+  .navBarContainerChecked {
+  background-color: rgb(200, 121, 245);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  z-index: 100;
+  }
+
   .navMessageContainer {
     height: 50px;
   }
@@ -179,20 +185,19 @@ ul {
   }
 
   .navBarItems {
+    width: 100%;
     visibility: hidden;
   }
 
   .navBarItemsChecked {
-    background-color: rgba(241, 241, 241, 0.7);
     border-left: 1px solid var(--dk-pink);
     /* height: 95vh; */
     height: auto;
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
     padding: 0;
-    padding-bottom: 70vh;
     margin: 0;
     width: 100%;
     z-index: 100;
@@ -200,15 +205,15 @@ ul {
   }
 
   .navItem {
-    visibility: hidden;
+    display: none;
   }
 
   li {
     height: 100%;
+    
   }
 
   .navItemChecked{
-    background-color: rgb(200, 121, 245);
     border-bottom: 1px solid var(--dk-pink);
     border-right: 1px solid var(--dk-pink);
     display: flex;
@@ -219,11 +224,16 @@ ul {
     padding: 3rem 1rem;
     margin: 0;
     text-align: center;
-    visibility: visible;
   }
 
+  /* .navIcon {
+    font-size: 1rem;
+    padding-right: 0;
+    padding-bottom: 0;
+  } */
+
   .navIcon {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-right: 0;
     padding-bottom: 1rem;
   }
@@ -232,22 +242,44 @@ ul {
     color: inherit;
   }
 
+  .navTextChecked {
+    font-size: var(--font-tiny);
+  }
+
   .navText {
     font-size: var(--font-tiny);
   }
 }
 
+.alaynaCheckedContainer{
+  border-bottom: 1px solid var(--dk-pink);
+  width: 100%;
+  -webkit-grid-column: 1 / 4;
+  -moz-grid-column: 1 / 4;
+  grid-column: 1 / 4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 15rem 0rem;
+}
+
 .alaynaTitleChecked {
   font-family: 'Sail', cursive;
+  text-align: center;
   color: black;
   font-size: var(--font-xl);
   letter-spacing: .3rem;
-  text-shadow: 4px 4px 4px rgb(229, 206, 255);
-  margin: 0;
-  transform: rotate(-20deg);
-  -webkit-column-span: all;
-  column-span: all;
+  text-shadow: 0px 0px 8px rgb(238, 223, 255);
   position: absolute;
+  transform: rotate(-20deg);
+}
+
+.navHeart {
+  fill: rgb(120, 0, 150);
+  font-size: 15rem;
+  position: absolute;
+  padding-top: 2rem;
 }
 
 /* FIND OUT WHY DOESN"T THIS WORK? */

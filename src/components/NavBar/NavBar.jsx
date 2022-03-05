@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import { GiDogHouse } from 'react-icons/gi'
-import { FaBookOpen, FaVideo, FaHippo, FaDog,FaStar } from 'react-icons/fa'
+import { FaBookOpen, FaVideo, FaHippo, FaDog, FaStar, FaHeart } from 'react-icons/fa'
 
 
 const NavBar = () => {
@@ -18,7 +18,10 @@ const NavBar = () => {
   }
 
   return (
-    <div className={styles.navBarContainer}>
+    <div 
+      className={
+      checked ? styles.navBarContainerChecked : styles.navBarContainer }
+    >
       <div className={styles.navMessageContainer}>
         <h5 className={styles.navMessage}>We might be a little bit obsessed with our dog</h5>
       </div>
@@ -74,6 +77,10 @@ const NavBar = () => {
             <FaStar className={styles.navIcon}/>
             <h3 className={styles.navText} >Favorites</h3>
           </Link>
+        </li>
+        <li className={checked ? styles.alaynaCheckedContainer : styles.alaynaContainer }>
+          <FaHeart className={styles.navHeart}/>
+          <h2 className={checked ? styles.alaynaTitleChecked : styles.alaynaTitle }>Alayna</h2>
         </li>
       </ul>
     </div>

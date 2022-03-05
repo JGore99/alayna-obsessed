@@ -13,18 +13,18 @@ import Favorites from './pages/Favorites/Favorites'
 function App() {
 
   return (
-    <div className='app'>
-    <NavBar />
-    <Header />
-    <Routes>
-      <Route path='/' element={<Landing /> }/>
-      <Route path='/story' element={<Story />}/>
-      <Route path='/video' element={<Video />}/>
-      <Route path='/aliases' element={<Aliases />}/>
-      <Route path='/buddies' element={<Buddies />}/>
-      <Route path='/favorites' element={<Favorites />}/>
-    </Routes>
-    </div>
+    <main>
+      <NavBar />
+      <Header />
+      <Routes>
+        <Route path='/' element={<Landing /> }/>
+        <Route path='/story' element={<Story />}/>
+        <Route path='/video' element={<Video />}/>
+        <Route path='/aliases' element={<Aliases />}/>
+        <Route path='/buddies' element={<Buddies />}/>
+        <Route path='/favorites' element={<Favorites />}/>
+      </Routes>
+    </main>
   );
 }
 

@@ -17,7 +17,7 @@ function BuddyModal({ image, name, title, closeBuddyModal, showBuddies }) {
             <GiDogHouse 
               className={`${styles.closeModalBtn}`} 
             />
-            <h4>Click anywhere to go back</h4>
+            <h4 className={`${styles.closeModalText}`}>Click anywhere to close</h4>
           </div>
           <h4 className={`${styles.bdModalTitle}`}>{ title} </h4>
         </div>

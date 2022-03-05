@@ -80,3 +80,53 @@
 .closeModalBtn:hover {
   transform: scale(1.1);
 }
+
+.closeModalText {
+  text-align: center;
+}
+
+/* ----------------------------MEDIA---------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+  .bdModalBg {
+    top: 40px;
+  }
+
+  .bdModalCard {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .bdModalDetails{
+    margin-top: .3rem;
+    /* position: relative; */
+  }
+  
+  .bdModalName {
+    font-size: var(--font-s);
+  }
+
+  .bdModalTitle {
+    font-size: var(--font-xs);
+  }
+
+  .closeModalContainer {
+    justify-content: start;
+    align-items: center;
+  }
+
+  .closeModalBtn {
+    font-size: 5rem;
+  }
+  
+  .closeModalBtn:hover {
+    transform: none;
+  }
+
+}
