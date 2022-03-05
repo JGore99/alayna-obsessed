@@ -177,7 +177,7 @@ ul {
   }
 
   .navMessageContainer {
-    height: 50px;
+    height: 55px;
   }
 
   .navMessage {
@@ -252,7 +252,7 @@ ul {
 }
 
 .alaynaCheckedContainer{
-  border-bottom: 1px solid var(--dk-pink);
+  /* border-bottom: 1px solid var(--dk-pink); */
   width: 100%;
   -webkit-grid-column: 1 / 4;
   -moz-grid-column: 1 / 4;
