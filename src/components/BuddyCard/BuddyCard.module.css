@@ -6,8 +6,7 @@
   margin: 0 1rem 2rem 1rem;
   width: 10%;
   min-width: 180px;
-  height: 20%;
-  min-height: 180px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +23,7 @@
 .buddyImage {
   border-radius: 5px;
   border: 1px var(--pink) solid;
-  height: 75%;
+  max-height: 75%;
   max-width: 80%;
   object-fit: scale-down;
   margin-top: 5px;
@@ -48,16 +47,19 @@
     background-image: linear-gradient(0deg, rgba(218, 218, 218, 0.3) 0%, rgba(255, 255, 255, 0.3) 50%);
     border: 1px var(--pink) solid;
     border-radius: 5px;
-    margin: 0 .2rem .6rem .2rem;
-    width: 10%;
-    min-width: 160px;
-    height: 20%;
-    min-height: 160px;
-    padding: 0.5rem;
+    margin: 0 0 .6rem 0;
+    width: 120px;
+    padding: 0.1rem 0;
   }
 
   .buddyCard:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .buddyImage {
+    max-height: 70%;
+    max-width: 75%;
+    object-fit: scale-down;
   }
 }
