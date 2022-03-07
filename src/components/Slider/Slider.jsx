@@ -38,7 +38,7 @@ const Slider = ({ slides }) => {
               <img className={`${styles.slideImage}`} src={ slide.image } alt="Silly Dog, being silly" />
               <h3 className={`${styles.slideTitle}`}>{slide.title}</h3>
               <div className={`${styles.slideControls}`}>
-                <dvi className={`${styles.heartContainer}`}
+                <div className={`${styles.heartContainer}`}
                 onClick={() => {
                   setOpenModal(true)
                   setShowArrows(false)
@@ -48,7 +48,7 @@ const Slider = ({ slides }) => {
                     className={`${styles.heart} ${styles.slideControlBtn}`}
                   />
                   <h5 className={`${styles.enlarge}`}>ZOOM <br/>IN</h5>
-                </dvi>  
+                </div>  
                 {showArrows && <FaArrowAltCircleLeft className={`${styles.arrow} ${styles.leftArrow} ${styles.slideControlBtn}`} onClick={prevSlide} />}
                 {showArrows && <FaArrowAltCircleRight className={`${styles.arrow} ${styles.rightArrow} ${styles.slideControlBtn}`} onClick={nextSlide} />} 
               </div>

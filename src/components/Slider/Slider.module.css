@@ -21,17 +21,17 @@
 }
 
 .activeSlide {
-  /* height: 60%; */
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
   position: relative;
   top: 0;
   z-index: 1;
+  transform: scale(1.08);
+  transition-duration: 1s;
 }
 
 .slideImage {
@@ -68,7 +68,7 @@
   user-select: none;
   font-size: 5rem;
   opacity: 0.7;
-  position: fixed;
+  position: absolute;
   /* top: 90%; */
   z-index: 2;
 }
