@@ -39,11 +39,11 @@ const Slider = ({ slides }) => {
               <h3 className={`${styles.slideTitle}`}>{slide.title}</h3>
               <div className={`${styles.slideControls}`}>
                 <div className={`${styles.heartContainer}`}
-                onClick={() => {
-                  setOpenModal(true)
-                  setShowArrows(false)
-                }}
-                >
+                  onClick={() => {
+                    setOpenModal(true)
+                    setShowArrows(false)
+                  }}
+                  >
                   <FaHeart 
                     className={`${styles.heart} ${styles.slideControlBtn}`}
                   />
