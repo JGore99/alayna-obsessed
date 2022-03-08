@@ -1,7 +1,7 @@
 
 
 .sliderContainer {
-  position: relative;
+  /* position: relative; */
   /* height: auto; */
   /* height: 80rem;
   max-height: 700px;
@@ -14,7 +14,7 @@
 }
 
 .slide {
-  position: relative;
+  /* position: relative; */
   scroll-behavior: smooth;
   scroll-snap-align: start;
   top: 0;
@@ -29,7 +29,7 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
-  position: relative;
+  /* position: relative; */
   top: 0;
   z-index: 1;
 }
@@ -47,11 +47,17 @@
 }
 
 .slideControls{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 100%;
-  margin-top: 2.5rem;
+  width: 100%;*/
+  margin-top: .1rem; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  position: relative;
 }
 
 .arrow {
@@ -64,29 +70,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
   cursor: pointer;
   user-select: none;
   font-size: 5rem;
+  text-align: center;
   opacity: 0.7;
-  position: absolute;
+  /* position: absolute; */
   /* top: 90%; */
   z-index: 2;
 }
 
 .leftArrow {
-  margin-right: 14rem; 
+  /* margin-right: 14rem;  */
+  grid-column: 1 / 2
 }
 
 .rightArrow {
-  margin-left: 14rem;
+  grid-column: 3 / 4
 }
 
 .heartContainer{
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: center;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  grid-column: 2 / 3;
+  height: 65px;
+  width: 65px;
+  margin: 0;
+  padding: 0;
 }
 
 .heart {
@@ -158,13 +173,14 @@
 
   .heartContainer {
     visibility: hidden;
+    width: 80px;
   }
 
-  .leftArrow {
+  /* .leftArrow {
     margin-right: 10rem; 
   }
   
   .rightArrow {
     margin-left: 10rem;
-  }
+  } */
 }
