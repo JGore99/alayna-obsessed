@@ -65,7 +65,7 @@ body {
   top: 0;
   bottom: 0; */
   font-family: var(--nav-font);
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   color: black;
   background: rgb(202, 202, 202);
   background-image: url('./images/pets_white.svg');
