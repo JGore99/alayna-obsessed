@@ -19,6 +19,7 @@ const Aliases = () => {
   return (
     <div className={`${styles.aliasesContainer}`}>
       <h1 className='pageTitle'>Aliases</h1>
+      <h3>{AliasList.length} and counting</h3>
       <div className={`${styles.eightBallContainer}`}>
         <div className={`${styles.eightBallOutter}`}
           onClick={() =>{
