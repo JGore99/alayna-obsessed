@@ -51,8 +51,8 @@ To showcase my skills in React and CSS. I’m very interested in front-end devel
 
 ## Stretch Goals:
 
-* The magic 8-ball should shake every time the user clicks for a new alias
-* Add content to the Favorites page. This will be a links page
-* Add content to the Video page. These will be embedded videos, not shared from YouTube
+* The magic 8-ball should shake every time the user clicks for a new alias.
+* Add content to the Favorites page. This will be a links page.
+* Add content to the Video page.
   
 <p>&nbsp;</p>
