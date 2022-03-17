@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './Aliases.module.css'
 import AliasList from '../../components/AliasList/AliasList'
 import { FaHeart } from 'react-icons/fa'
+import 'animate.css';
 
 const Aliases = () => {
 
@@ -10,8 +11,12 @@ const Aliases = () => {
   const [showHeart, setShowHeart] = useState(false)
   const [showInstructions, setshowInstructions] = useState(true)
   const [disabled, setDisabled] = useState()
-  
+  const [animate, setAnimate] = useState(false)
+  const eightBallContainerClass = animate ? `${styles.eightBallContainer} + animate__animated + animate__wobble` : `${styles.eightBallContainer}`
+
+
   const showAlias = () => {
+    setAnimate(true)
     setCurrentAlias(0)
     setShowHeart(false)
     setshowInstructions(false)
@@ -19,19 +24,22 @@ const Aliases = () => {
     setCurrentAlias(newCurrentAlias)
     let updatedAliases = remainingAliases.filter(remainingAlias => remainingAlias.id !== newCurrentAlias.id)
     setremainingAliases(updatedAliases)
-    console.log("remainingAliases", remainingAliases)
-    console.log("length", remainingAliases.length)
     setTimeout(() => {
       setShowHeart(true)}, 400)
     setDisabled(remainingAliases.length === 1 ? true : false)
+    setTimeout(() => {
+      setAnimate(false)}, 700)
   }
 
+  
+
+  
   return (
     <div className={`${styles.aliasesContainer}`}>
       <h1 className='pageTitle'>Aliases</h1>
       <h3>{remainingAliases.length} remaing</h3>
       {disabled && <h3>That's all of them, for now.</h3>}
-      <div className={`${styles.eightBallContainer}`}>
+      <div className={eightBallContainerClass}>
       <button className={`${styles.eightBallButton}`}
           disabled={disabled}
           onClick={() =>{
@@ -55,7 +63,9 @@ const Aliases = () => {
         onClick={() =>{
           showAlias()
           }}
-        >Click</button>
+        >
+         {!disabled ? "Click" : `That's it`} 
+          </button>
     </div>
   )
 }
