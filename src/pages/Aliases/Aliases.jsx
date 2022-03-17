@@ -27,6 +27,7 @@ const Aliases = () => {
     setTimeout(() => {
       setShowHeart(true)}, 400)
     setDisabled(remainingAliases.length === 1 ? true : false)
+    console.log(remainingAliases)
     setTimeout(() => {
       setAnimate(false)}, 700)
   }
@@ -37,8 +38,7 @@ const Aliases = () => {
   return (
     <div className={`${styles.aliasesContainer}`}>
       <h1 className='pageTitle'>Aliases</h1>
-      <h3>{remainingAliases.length} remaing</h3>
-      {disabled && <h3>That's all of them, for now.</h3>}
+      {remainingAliases.length === 0 ? <h3>That's all of them, for now.</h3>:<h3>{remainingAliases.length} remaing</h3>}
       <div className={eightBallContainerClass}>
       <button className={`${styles.eightBallButton}`}
           disabled={disabled}
