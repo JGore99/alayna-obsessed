@@ -51,7 +51,10 @@ To showcase my skills in React and CSS. I’m very interested in front-end devel
 
 ## Stretch Goals:
 
-* The magic 8-ball should shake every time the user clicks for a new alias.
+* COMPLETED -- The magic 8-ball should shake every time the user clicks for a new alias.
+* COMPLETED -- Prevent repeated use of aliases.
+* COMPLETED -- Disable function once last aslias has been shown.
+* COMPLETED -- Diplay remaining number of aliases.
 * Add content to the Favorites page. This will be a links page.
 * Add content to the Video page.
   
