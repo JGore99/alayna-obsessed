@@ -3,7 +3,7 @@ import styles from './BuddyCard.module.css'
 
 const BuddyCard = ({ buddy, openBuddyModal, setBuddyId, setShowBuddies }) => {
   return (
-    <div className={`${styles.buddyCard}`} 
+    <div className={`${styles.buddyCard}`}
       onClick={() => {
       openBuddyModal(true)
       setBuddyId(buddy.id)

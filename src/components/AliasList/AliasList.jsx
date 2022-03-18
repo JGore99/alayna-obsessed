@@ -52,6 +52,10 @@ const AliasList = [
     id: 12,
     name: "Elaine Benes",
   },
+  {
+    id: 13,
+    name: "Fonzee Dracula",
+  },
 ]
 
 export default AliasList

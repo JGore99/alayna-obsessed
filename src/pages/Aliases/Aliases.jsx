@@ -12,7 +12,7 @@ const Aliases = () => {
   const [showInstructions, setshowInstructions] = useState(true)
   const [disabled, setDisabled] = useState()
   const [animate, setAnimate] = useState(false)
-  const eightBallContainerClass = animate ? `${styles.eightBallContainer} + animate__animated + animate__wobble` : `${styles.eightBallContainer}`
+  const eightBallContainerClass = animate ? `${styles.eightBallContainer} + animate__animated + animate__shakeX` : `${styles.eightBallContainer}`
 
 
   const showAlias = () => {
