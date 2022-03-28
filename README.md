@@ -55,6 +55,7 @@ To showcase my skills in React and CSS. I’m very interested in front-end devel
 * COMPLETED -- Prevent repeated use of aliases.
 * COMPLETED -- Disable function once last aslias has been shown.
 * COMPLETED -- Diplay remaining number of aliases.
+* Add refresh feature when out of aliases
 * Add content to the Favorites page. This will be a links page.
 * Add content to the Video page.
   

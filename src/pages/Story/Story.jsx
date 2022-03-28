@@ -19,7 +19,7 @@ const Story = () => {
         <img className={`${styles.storyImg}`} src={alaynaHome01Img} alt="home but unsure" />
       </div>
       <div className={`${styles.chapter}`}>
-        <h3 className={`${styles.storyText}`}>She stayed with us for 2 weeks before we finally admitted to ourselves that she was home. In that time, she became more comfortable with us, and we fell for her hard. We changed “Alana” to “Alayna” to better reflect its pronunciation, and the rest is history. Her daily adventures and naps can be seen on her <a href="https://www.instagram.com/lil_velvet_fart_dragon/?hl=en" target="_blank" rel="noreferrer noopener">Instagram. <FiInstagram /></a> <FaArrowLeft /></h3>
+        <h3 className={`${styles.storyText}`}>She stayed with us for 2 weeks before we finally admitted to ourselves that she was home. In that time, she became more comfortable with us, and we fell for her hard. We changed “Alana” to “Alayna” to better reflect its pronunciation, and the rest is history. Her daily adventures and naps, it’s mostly naps, can be seen on her <a href="https://www.instagram.com/lil_velvet_fart_dragon/?hl=en" target="_blank" rel="noreferrer noopener">Instagram. <FiInstagram /></a> <FaArrowLeft /></h3>
         <img className={`${styles.storyImg}`} src={alaynaHome02Img} alt="home for good" />
       </div>
     </div>

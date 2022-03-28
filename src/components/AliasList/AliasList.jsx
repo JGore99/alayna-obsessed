@@ -56,6 +56,22 @@ const AliasList = [
     id: 13,
     name: "Fonzee Dracula",
   },
+  {
+    id: 14,
+    name: "Woo Girl",
+  },
+  {
+    id: 15,
+    name: "Floppy Muppet",
+  },
+  {
+    id: 16,
+    name: "Zuul",
+  },
+  {
+    id: 17,
+    name: "Kick Puncher",
+  },
 ]
 
 export default AliasList

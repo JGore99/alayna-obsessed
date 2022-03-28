@@ -29,6 +29,8 @@ html, body, main {
 /* resets font size to be 62.5% of the user preference - 
      in most browser configurations this will be 10px */
 :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
   font-size: 62.5%;
   --pink: rgb(182, 81, 240);
   --lt-pink: rgb(209, 129, 255);
@@ -109,3 +111,4 @@ button:hover {
   background-color: var(--lt-pink);
   border: 1px solid rgb(109, 0, 103);
 }
+
